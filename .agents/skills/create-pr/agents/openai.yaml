@@ -1,0 +1,7 @@
+interface:
+  display_name: "Create PR"
+  short_description: "Create a focused GitHub pull request"
+  default_prompt: "Use $create-pr to create a GitHub pull request for the current changes."
+
+policy:
+  allow_implicit_invocation: true
