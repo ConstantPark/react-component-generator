@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root { color-scheme: light; font-synthesis: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: 'Trebuchet MS', 'Malgun Gothic', Arial, sans-serif;
+  background: #f4f0e7;
+  color: #17212b;
+  min-height: 100vh;
+  background-image: radial-gradient(rgba(23,33,43,.07) .7px, transparent .7px);
+  background-size: 7px 7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
