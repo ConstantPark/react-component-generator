@@ -4,6 +4,11 @@ import userEvent from '@testing-library/user-event';
 import { PromptInput } from './PromptInput';
 
 describe('PromptInput', () => {
+  it('프롬프트 입력을 최대 500자로 제한한다', () => {
+    render(<PromptInput onGenerate={vi.fn()} isLoading={false} />);
+    expect(screen.getByRole('textbox')).toHaveAttribute('maxLength', '500');
+  });
+
   it('프롬프트가 비어 있으면 생성 버튼이 비활성이다', () => {
     render(<PromptInput onGenerate={vi.fn()} isLoading={false} />);
     expect(screen.getByRole('button', { name: '컴포넌트 생성' })).toBeDisabled();
